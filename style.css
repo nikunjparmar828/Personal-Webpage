@@ -1,0 +1,201 @@
+body {
+	margin : 0;
+	padding : 0;
+	font-family : sans-serif;	
+	}
+nav {
+	width : 100%;
+	background: 	#800000;
+	padding : 0 50px;
+	box-sizing : border-box;
+}
+nav h1{
+	float : left;
+	margin: 0;
+	padding : 15px 20px;
+	font-family : Tahoma;
+	color : #fff;
+}
+
+nav a {
+	color : #fff;
+	text-decoration : none;
+	font-family : Tahoma;
+	font-size:20px;
+}
+
+nav ul {
+	float : right ;
+	margin : 0;
+	padding : 0;
+}
+
+nav ul li{
+	display : inline-block;
+	list-style : none;
+	padding : 20px 30px;
+}
+
+nav li a:hover{
+	color : blue;
+}
+
+.responsive_bar {
+	width : 100%;
+	background : 	#800000;
+	padding : 10px 30px;
+	box-sizing : border-box;
+	display : none;
+}
+.responsive_bar h3 a{
+	color : #fff;
+	margin : 0;
+	padding : 7px 0px;
+	float : left;
+}
+
+.responsive_bar h4{
+	float : right;
+	padding : 5px 10px;
+	margin : 0;
+	text-transform : uppercase;
+	cursor : pointer;
+}
+.box{
+	width : 700px; height : 500px;
+	margin : auto;
+	margin-top : 2%;
+}
+
+
+.pro_pic{
+	width : 250px;
+	height : 250px;
+	border-radius : 1px solid white;
+	margin : auto;
+	margin-top : 10px;
+	border-radius : 50%;
+}
+
+.box h3 {
+	text-align : center;
+	font-family : cursive, sans-serif;
+	color : black;
+	font-size :170%;
+}
+
+.box p{
+	color : black;
+	margin : 20px;
+	font-family : "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size : 120%;
+	word-spacing : 4px;
+	font-weight : bold;
+}
+
+
+@media (max-width : 900px)
+{
+	nav{
+		display : none;
+	}
+	.responsive_bar{
+		display : block;
+	}
+	nav h1{
+		display : block; float : none;
+	}
+	nav ul {float : none;}
+	nav ul li {
+		display : block; text-align : center;
+		background : black;
+		border-bottom : 1px solid rgba(255,255,255,.1);
+	}
+	nav h1 {display : none;}
+	
+	.box{
+	width : 100%; height : 600px;
+	margin : auto;
+	margin-top : 0%;
+	}
+	nav li a:hover{
+	font-weight : bold;
+	}
+	
+	
+}
+
+/*About me page*/
+
+.box_about {
+	width : 1000px; height : 500px;
+	margin : auto;
+	margin-top : 2%;
+}
+
+.box_about h1{
+	text-align : center;
+	font-family : Areal, sans-serif;
+}
+
+.box_about p{
+	color : black;
+	margin : 20px;
+	font-family : "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size : 120%;
+	word-spacing : 4px;
+	font-weight : bold;
+}
+
+@media (max-width : 900px)
+{
+	/*About me page - Responsive Design*/
+	.box_about{
+	width : 100%; height : 1000px;
+	margin : auto;
+	margin-top : 0%;
+	}
+	
+}
+
+/*Contact Box*/
+
+.box_contact {
+	width : 500px; height : 500px;
+	margin : auto;
+	margin-top:2%;
+}
+.box_contact h2{
+	border-bottom : 1px solid gray;
+}
+.box_contact h2{
+	font-family : Courier, monospace;
+	font-size:20px;
+}
+.box_contact ul li{
+	list-style : none;
+	display : inline-block;
+	margin : 10px;
+}
+
+.box_contact h3{
+	font-family : Courier, monospace;
+	font-size:20px;
+	font-weight : bold;
+	color : #800000;
+}
+
+/*Projects*/
+
+.box_projects {
+	margin : auto;
+	width : 1000px;
+	height : 500px;
+}
+
+ul li img{
+	float : left;
+}
+ul li p{
+	float : right;
+}
