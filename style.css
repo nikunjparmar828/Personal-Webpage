@@ -190,12 +190,44 @@ nav li a:hover{
 .box_projects {
 	margin : auto;
 	width : 1000px;
-	height : 500px;
+}
+.sub {
+	margin-top : 5%;
+	
+	width: 100%;
+	height : 850px;
+	border-bottom : 5px solid #800000;
 }
 
-ul li img{
-	float : left;
+.sub h2{
+	font-size : 30px;
+	margin : 10px;
 }
-ul li p{
-	float : right;
+.sub h3 {
+	margin : 5px;
+}
+
+.sub img {
+	margin-top : 10px;
+	width: 700px;; height:400px; display:block; margin-left:auto; margin-right: auto;
+}
+
+.sub p {
+	color : black;
+	margin : 20px;
+	font-family : "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size : 120%;
+	word-spacing : 4px;
+	font-weight : bold;
+}
+
+@media (max-width : 900px)
+{
+	/*Projects page - Responsive Design*/
+	.box_projects {
+	margin : auto;
+	width : 100%;
+	}
+	.sub img {display:none;}
+	
 }
