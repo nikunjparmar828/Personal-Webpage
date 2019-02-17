@@ -299,11 +299,6 @@ nav li a:hover{
 @media (max-width : 900px)
 {
 	#ftr {
-	position : absolute;
-	margin : 0px;
-	bottom : 0%;
-	width : 100%;
-	color : #808080;
-	font-size: 10px; 
+	display : none; 
 	}
 }
