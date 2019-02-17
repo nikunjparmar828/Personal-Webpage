@@ -295,3 +295,16 @@ nav li a:hover{
 	color : #808080;
 	font-size: 15px; 
 }
+
+@media (max-width : 900px)
+{
+	#ftr {
+	position : relative ;
+	margin : 0px;
+	bottom : 0%;
+	height : auto;
+	width : 100%;
+	color : #808080;
+	font-size: 10px; 
+	}
+}
