@@ -228,6 +228,7 @@ nav li a:hover{
 	.box_projects {
 	margin : auto;
 	width : 100%;
+	height : 700px;
 	}
 	.sub img {display:none;}
 	
