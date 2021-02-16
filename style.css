@@ -289,7 +289,7 @@ nav li a:hover{
 #ftr {
 	position : relative ;
 	margin : 0px;
-	bottom : 0%;
+	bottom-right : 0%;
 	height : 30px;
 	width : 100%;
 	color : #808080;
