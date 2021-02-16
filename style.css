@@ -287,9 +287,9 @@ nav li a:hover{
 /*Footer*/
 
 #ftr {
-	position : relative ;
+	position : absolute ;
 	margin : 0px;
-	bottom : 0%;
+	bottom : 0;
 	border : 1px solid #000; 
 	height : 30px;
 	width : 100%;
