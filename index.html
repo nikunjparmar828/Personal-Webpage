@@ -1,64 +1,162 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Homeland</title>
-		<link href="style.css" type="text/css" rel="stylesheet">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="First web-site">
-		<meta name="author" content="Nikunj Parmar">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	</head>
-	<body>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Nikunj Parmar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Nikunj Parmar — Robotics Engineer. Computer vision, motion planning, and autonomous systems.">
+	<meta name="author" content="Nikunj Parmar">
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
 
-	<nav>
-		<h1><a href="index.html" style="text-decoration:none;">NIKUNJ PARMAR</a></h1>
-		<ul class="had">
-			<li><a href="About.html">About</a></li>
-			<li><a href="#" target="_blank">Résumé</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="Projects.html">Projects</a></li>
-		</ul>
-		<div style="clear:both;"></div>
-	</nav>
-					
-					<div class="responsive_bar">
-					<h3 class="had"><a href="index.html" style="text-decoration:none;">NIKUNJ PARMAR</a></h3>
-					<h4 class="main"><i class="material-icons" style="font-size:25px;color:#fff;">list</i></h4>
-					<div style="clear:both"></div>
-					</div>
-					
-					<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-					<script type="text/javascript">
-					$(document).ready(function(){
-						$(".main").click(function(){
-							$("nav").slideToggle(500);
-						})
-					})
-					</script>
-					<div class="box">
-						
-					<div class="imag" style="width:250px; height:250px; margin:auto;">
-						<img src="i.jpg" class="pro_pic">
-					</div>
-					
-					<div class="wlc">
-					<h3>Welcome !</h3>	
-					</div>
-						
-					<p>Hello, my name is Nikunj, I finished my B.Tech. in Mechanical Engineering at the 
-						<a href="http://www.nirmauni.ac.in" style="color:#800000; text-decoration:none;" target="_blank">
-							Nirma University (NU)</a>, India. 
-							Currently, I'm a graduate student in the Department of Robotics Engineering at Worcester Polytechnic Institute (WPI), MA. 
-							I am a former researcher at <a href="http://www.nirmauni.ac.in/ITNU/idea_Lab" style="color:#800000; text-decoration:none;" target="_blank">Idea Lab</a>, NU. 
-							</p>		
-					
-					</div>
-					
-					<footer id="ftr">
-						<p> All rights reserved by &copy; <i>Nikunj Parmar</i> 2022.</p>
-					</footer>
-					
-					
-	</body>
+<div class="container" id="top">
+
+	<header class="site-header">
+		<h1><a href="#top">Nikunj Parmar</a></h1>
+		<p class="tagline">Robotics Engineer &mdash; Computer Vision &middot; Motion Planning &middot; Autonomous Systems</p>
+		<nav class="site-nav">
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#blog">Blog</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<section id="about" class="section">
+		<h2>About</h2>
+		<div class="about-grid">
+			<img src="i.jpg" alt="Nikunj Parmar" class="avatar">
+			<div class="about-text">
+				<p>Hi, I'm Nikunj &mdash; a graduate student in the Robotics Engineering department at Worcester Polytechnic Institute (WPI). I completed my B.Tech in Mechanical Engineering at <a href="http://www.nirmauni.ac.in" target="_blank" rel="noopener">Nirma University</a> (NU), India, where I was also a researcher at the <a href="http://www.nirmauni.ac.in/ITNU/idea_Lab" target="_blank" rel="noopener">Idea Lab</a>.</p>
+
+				<p>My interests lie in intelligent robotics, autonomous vehicle technology, computer vision, and controls &mdash; and how they come together to make machines a little more capable. I got hooked in my freshman year watching robots take on real problems, from agriculture to space science, and the fact that they're still far from perfect is what keeps me working on them.</p>
+
+				<p>Along the way I've worked with some great labs and companies: at the Institute for Plasma Research (IPR) I designed and prototyped a multi-DOF parallel haptic arm; at Sea Tech Lab, Florida Atlantic University, I researched optimal path planning for unmanned surface vehicles in dynamic ocean environments under Dr. Manhar Dhanak; and at Tirth Agro Technology I worked on mechanical product design and automation.</p>
+			</div>
+		</div>
+
+		<details>
+			<summary>Coursework</summary>
+			<div class="detail-columns">
+				<div>
+					<h4>Graduate</h4>
+					<ul>
+						<li>Computer Vision</li>
+						<li>Motion Planning</li>
+						<li>Machine Learning</li>
+						<li>Foundation of Robotics</li>
+						<li>Controls</li>
+						<li>Dynamics</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Undergraduate</h4>
+					<ul>
+						<li>Art of Programming</li>
+						<li>Critical Thinking</li>
+						<li>Engineering Graphics</li>
+						<li>Information and Communication Tools</li>
+						<li>Object-Oriented Programming with C++ (Minor)</li>
+						<li>Kinematics 1 &amp; 2</li>
+						<li>Dynamics of Mechanism 1</li>
+						<li>Control Engineering</li>
+						<li>Creativity and Innovation</li>
+						<li>Internet and Website Development (Minor)</li>
+						<li>Robotics Engineering</li>
+						<li>Operating Systems</li>
+						<li>Data Structures (Minor)</li>
+						<li>Machine Design 1</li>
+						<li>Production Technology</li>
+						<li>Database Management Systems</li>
+						<li>Operational Research</li>
+					</ul>
+				</div>
+			</div>
+		</details>
+
+		<details>
+			<summary>Books I've enjoyed</summary>
+			<ul class="book-list">
+				<li>Where Good Ideas Come From &mdash; Steven Johnson</li>
+				<li>Moonwalking with Einstein &mdash; Joshua Foer</li>
+				<li>Betting It All</li>
+				<li>Surely You're Joking, Mr. Feynman!</li>
+				<li>Leonardo da Vinci &mdash; Walter Isaacson</li>
+				<li>The Man Who Knew Infinity: A Life of the Genius Ramanujan</li>
+				<li>Superintelligence &mdash; Nick Bostrom</li>
+				<li>...and many more</li>
+			</ul>
+		</details>
+	</section>
+
+	<section id="projects" class="section">
+		<h2>Projects</h2>
+		<div class="project-list">
+
+			<article class="project">
+				<h3>Implementation of Path Planning Algorithms for Autonomous Vehicles<span class="date">Aug&ndash;Dec 2021</span></h3>
+				<p>Implemented A* and B-spline path smoothing in a 2D dynamic parking lot environment, with a PID controller for angular and linear velocities and Ackermann steering kinematics. <a href="https://drive.google.com/file/d/1URy0h385pkklGBjLWcIMKMvOOINluf_u/view?usp=sharing" target="_blank" rel="noopener">Report</a></p>
+			</article>
+
+			<article class="project">
+				<h3>Multi-DOF Parallel Haptic Arm<span class="date">Jan&ndash;May 2020</span></h3>
+				<p>Designed and fabricated cable-driven rotary actuators for a multi-DOF parallel arm used as a haptic controller for remote robot operation, improving operator trajectory-tracking accuracy. Led the project as lead designer and programmer, from concept to prototype.</p>
+			</article>
+
+			<article class="project">
+				<h3>Path Planning &amp; Obstacle Avoidance for USVs<span class="date">May&ndash;Jul 2019</span></h3>
+				<p>Developed Artificial Potential Field algorithms to compute shortest-time global paths for a WAM-V 16 Unmanned Surface Vehicle under dynamic ocean currents and wind, tested in the Atlantic Ocean. Advised by Dr. Manhar Dhanak and Armando Sinnisterra.</p>
+			</article>
+
+			<article class="project">
+				<h3>In-Helmet Spacesuit Device<span class="date">Mar&ndash;Dec 2018</span></h3>
+				<p>Designed a device for spacesuit helmets to remove sweat, moisture, and anti-fogging agents that irritate astronauts' eyes during extravehicular activity, using sweeping robotic arms with absorbent heads mounted on the snoopy cap. <a href="https://drive.google.com/file/d/1ISWhO3IJ2bH-tOu3tDkZ1mSeV7zn3tom/view?usp=sharing" target="_blank" rel="noopener">Design notes</a></p>
+			</article>
+
+			<article class="project">
+				<h3>Quadruped Robot<span class="date">Jul&ndash;Dec 2018</span></h3>
+				<p>Designed a 12-DOF quadruped (3 DOF per limb) in SolidWorks and visualized it in RViz (ROS). Simulated Trot, Gallop, and Bound gaits in MATLAB and PyBullet, completing the design and simulation stage with a top score on the project.</p>
+			</article>
+
+			<article class="project">
+				<h3>Absorbency Test Chamber for Low-Pressure Environments<span class="date">Mar&ndash;Dec 2018</span></h3>
+				<p>Built a vacuum test chamber to evaluate absorbency materials for the in-helmet spacesuit device under different contaminants (tears, sweat, anti-fog agent) and vacuum pressures, collecting 165 test results across four materials at a time. Funded by Idea Lab, Nirma University.</p>
+			</article>
+
+			<article class="project">
+				<h3>Extrusion Die<span class="date">Mar&ndash;Apr 2018</span></h3>
+				<p>Group project to design a square-face extrusion die for ductile materials, studying extrusion pressure, die angle, and material flow, including a CFD analysis (my contribution). Tested successfully with wax. Advised by Prof. Nilesh Ghetiya. <a href="https://drive.google.com/file/d/19ScPxtEmVo7yj-bgHF00TiyCPWcc5lAJ/view?usp=sharing" target="_blank" rel="noopener">Results</a></p>
+			</article>
+
+		</div>
+	</section>
+
+	<section id="blog" class="section">
+		<h2>Blog</h2>
+		<div class="blog-stub">
+			Blog coming soon &mdash; I'm planning to write up notes on robotics, computer vision, and whatever else I'm learning along the way. Check back later.
+		</div>
+	</section>
+
+	<section id="contact" class="section">
+		<h2>Contact</h2>
+		<div class="contact-lines">
+			<p>Email: <a href="mailto:nparmar@wpi.edu">nparmar@wpi.edu</a></p>
+			<p>Alternate: <a href="mailto:nikunjparmar828@gmail.com">nikunjparmar828@gmail.com</a></p>
+		</div>
+		<div class="social-links">
+			<a href="https://github.com/nikunjparmar828" target="_blank" rel="noopener">GitHub</a>
+			<a href="https://twitter.com/NIKEparmarsk" target="_blank" rel="noopener">Twitter</a>
+			<a href="https://www.facebook.com/nikunj.parmar.3551" target="_blank" rel="noopener">Facebook</a>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; 2026 Nikunj Parmar</p>
+	</footer>
+
+</div>
+
+</body>
 </html>
