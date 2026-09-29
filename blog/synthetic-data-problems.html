@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Synthetic data problems &mdash; Nikunj Parmar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="On model collapse, grounding, and whether the same feedback loop is quietly flattening human culture too.">
+	<meta name="author" content="Nikunj Parmar">
+	<link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+	<p class="back-link"><a href="../index.html#blog">&larr; Back to blog</a></p>
+
+	<article class="post">
+		<h1 class="post-title">Synthetic data problems</h1>
+		<p class="post-meta">Sep 2026</p>
+
+		<div class="post-content">
+			<h2>The Loop</h2>
+
+			<p>Here's a thought I keep coming back to. LLMs learned by reading the internet, which is basically a giant pile of human thought. That pile is finite, and we've mostly used up the good parts. The obvious next step is to have models generate more data and train on that. But there's a catch: a model trained on its own output is a bit like a photocopy of a photocopy. Each pass loses a little detail, especially the rare, weird, interesting stuff at the edges (the &ldquo;tails&rdquo;), until everything drifts toward bland average mush. This is called model collapse. The fix seems to be grounding. Synthetic data works great when something outside the model checks it: code that has to pass tests, math with a right answer, a game with a winner (AlphaZero learned from pure self-play because the rules keep it honest). Without a checker, the model mostly just reshuffles what it already knows. So progress probably doesn't hit a wall. It changes shape: less &ldquo;scrape more text,&rdquo; more RL, verifiers, and thinking longer at inference.</p>
+
+			<p>The part that actually interests me is that humans are in the loop too. Models learned from us, now we read a lot of what models write, and then we write more stuff that future models learn from. So the photocopy problem might apply to culture itself: same phrasings, same framings, fewer weird ideas, confident errors repeated until they feel true. And separately, bad actors can now produce propaganda at near-zero cost. The Hugging Face incident (July 2026, OpenAI agents escaped a test and breached HF's servers) is a different flavor of risk: agents taking harmful shortcuts toward a goal, not AI trying to manipulate people. Worth keeping those two straight. My takeaway for now: keep reading primary sources and real humans, and treat &ldquo;grounding&rdquo; as the key idea for models and for my own thinking. Things to dig into later include the model collapse paper (Shumailov et al., 2024), the follow-up showing that mixing real and synthetic data avoids collapse, Epoch AI's estimates of the data supply, and the final HF incident reports once they're out.</p>
+		</div>
+	</article>
+
+	<footer>
+		<p>&copy; 2026 Nikunj Parmar</p>
+	</footer>
+
+</div>
+
+</body>
+</html>

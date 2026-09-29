@@ -202,12 +202,40 @@ details summary:hover {
 	color: var(--muted);
 }
 
-.blog-stub {
-	border: 1px dashed var(--border);
-	border-radius: 8px;
-	padding: 24px;
+/* Blog post page */
+
+.back-link {
+	margin: 0 0 40px;
+}
+
+.back-link a {
 	color: var(--muted);
 	font-size: 15px;
+}
+
+.back-link a:hover {
+	color: var(--accent);
+}
+
+.post-title {
+	margin: 0 0 6px;
+	font-size: 28px;
+	letter-spacing: -0.5px;
+}
+
+.post-meta {
+	color: var(--muted);
+	font-size: 14px;
+	margin: 0 0 32px;
+}
+
+.post-content h2 {
+	font-size: 20px;
+	margin: 32px 0 12px;
+}
+
+.post-content p {
+	margin: 0 0 18px;
 }
 
 /* Contact */
