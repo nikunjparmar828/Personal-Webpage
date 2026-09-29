@@ -178,6 +178,17 @@ details summary:hover {
 	font-size: 18px;
 }
 
+.entry-logo {
+	width: 18px;
+	height: 18px;
+	object-fit: contain;
+	vertical-align: middle;
+	margin-right: 8px;
+	border-radius: 3px;
+	position: relative;
+	top: -1px;
+}
+
 .project .date {
 	color: var(--muted);
 	font-weight: 400;
