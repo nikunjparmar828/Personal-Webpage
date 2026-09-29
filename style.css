@@ -136,31 +136,11 @@ details summary:hover {
 	color: var(--accent);
 }
 
-.detail-columns {
-	display: flex;
-	gap: 40px;
-	margin-top: 16px;
-	flex-wrap: wrap;
-}
-
-.detail-columns > div {
-	flex: 1;
-	min-width: 200px;
-}
-
-.detail-columns h4 {
-	margin: 0 0 8px;
-	font-size: 14px;
-	color: var(--muted);
-}
-
-.detail-columns ul,
 .book-list {
 	margin: 0;
 	padding-left: 18px;
 }
 
-.detail-columns li,
 .book-list li {
 	margin-bottom: 6px;
 }
