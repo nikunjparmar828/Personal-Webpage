@@ -93,7 +93,20 @@
 			<article class="project">
 				<h3>Software Engineer Intern, MathWorks<span class="date">May&ndash;Aug 2022</span></h3>
 				<p class="role-meta">Natick, MA</p>
-				<p>Shipped two features for the MATLAB Image Acquisition Toolbox &mdash; a real-time status bar and a configuration management system &mdash; and fixed a critical crash bug.</p>
+				<div class="exp-feature">
+					<a class="feature-media" href="https://www.mathworks.com/products/image-acquisition.html" target="_blank" rel="noopener">
+						<img src="media/imaq-explorer.jpg" alt="Image Acquisition Explorer app in MATLAB" loading="lazy">
+						<span class="feature-caption">Image Acquisition Explorer &middot; MATLAB Image Acquisition Toolbox<small>Image &copy; MathWorks</small></span>
+					</a>
+					<div class="feature-text">
+						<p>Shipped two features in the <strong>Image Acquisition Toolbox</strong>, used by engineers to stream and record from cameras in MATLAB.</p>
+						<ul class="exp-list">
+							<li><strong>Real-time status bar</strong> for live video streams, image capture, and object tracking, built with MVC and Mediator patterns and multithreading.</li>
+							<li><strong>Configuration management</strong> to save, refresh, and load app settings, cutting setup time.</li>
+							<li>Found and fixed a critical crash bug triggered by Chinese filenames.</li>
+						</ul>
+					</div>
+				</div>
 			</article>
 
 			<article class="project">
@@ -178,6 +191,51 @@
 				<p>Built a Global Nearest Neighbor tracker to track constant-velocity obstacles for autonomous vehicles. <a href="https://github.com/nikunjparmar828/MTT-System-GNN-Tracker" target="_blank" rel="noopener">Code</a></p>
 			</details>
 			<details class="proj">
+				<summary><span class="proj-name">Hybrid Spatial-Temporal Deep Network for Lane Detection</span><span class="date">2022</span></summary>
+				<div class="proj-body">
+					<figure class="proj-media">
+						<video src="media/lane-detection.mp4" poster="media/lane-detection.jpg" muted loop playsinline preload="none"></video>
+						<figcaption>Camera input (left) and predicted lanes (right), recorded on the WPI campus</figcaption>
+					</figure>
+					<p>Lane detection on continuous driving video, framed as segmentation: an SCNN extracts per-frame features, an ST-RNN fuses them over time, and an encoder&ndash;decoder makes it end-to-end. Compared ST-RNN and encoder&ndash;decoder variants on accuracy, precision, recall, and F1 (PyTorch). <a href="https://github.com/nikunjparmar828/Lane-Detection-for-Autonomous-Cars" target="_blank" rel="noopener">Code</a></p>
+				</div>
+			</details>
+			<details class="proj">
+				<summary><span class="proj-name">Seq2Seq English-to-French Translation with Attention</span><span class="date">2022</span></summary>
+				<div class="proj-body">
+					<figure class="proj-media proj-media-diagram">
+					<svg class="proj-diagram" viewBox="0 0 690 140" role="img" aria-label="Encoder-decoder with attention: English tokens embedded with GloVe, encoded by a GRU, attention over encoder states, decoded by a GRU into French tokens">
+						<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="dg-arrow"/></marker></defs>
+						<text x="85" y="20" class="dg-label">English sentence</text>
+						<rect x="10" y="40" width="150" height="40" rx="8" class="dg-box"/><text x="85" y="65" class="dg-text">GloVe 6B embeddings</text>
+						<rect x="195" y="40" width="110" height="40" rx="8" class="dg-box dg-accent"/><text x="250" y="65" class="dg-text">GRU encoder</text>
+						<rect x="340" y="40" width="100" height="40" rx="8" class="dg-box"/><text x="390" y="65" class="dg-text">Attention</text>
+						<rect x="475" y="40" width="110" height="40" rx="8" class="dg-box dg-accent"/><text x="530" y="65" class="dg-text">GRU decoder</text>
+						<text x="530" y="128" class="dg-label">French sentence</text>
+						<line x1="85" y1="26" x2="85" y2="38" class="dg-line" marker-end="url(#arr)"/>
+						<line x1="160" y1="60" x2="193" y2="60" class="dg-line" marker-end="url(#arr)"/>
+						<line x1="305" y1="60" x2="338" y2="60" class="dg-line" marker-end="url(#arr)"/>
+						<line x1="440" y1="60" x2="473" y2="60" class="dg-line" marker-end="url(#arr)"/>
+						<line x1="530" y1="80" x2="530" y2="112" class="dg-line" marker-end="url(#arr)"/>
+						<path d="M585,60 C622,60 622,24 530,24 L530,38" class="dg-line dg-dash" marker-end="url(#arr)"/>
+						<text x="628" y="40" class="dg-small" style="text-anchor:start">previous</text>
+						<text x="628" y="53" class="dg-small" style="text-anchor:start">word</text>
+					</svg>
+					</figure>
+					<p>Neural machine translation with a GRU encoder on pretrained GloVe embeddings and an attention-based GRU decoder, trained with teacher forcing (PyTorch). <a href="https://github.com/nikunjparmar828/Deep-Learning-based-Seq2Seq-English-to-French" target="_blank" rel="noopener">Code</a></p>
+				</div>
+			</details>
+			<details class="proj">
+				<summary><span class="proj-name">Custom Object Detection with Haar Cascades</span><span class="date">2022</span></summary>
+				<div class="proj-body">
+					<figure class="proj-media">
+						<img src="media/haar-detection.jpg" alt="Color-segmented candidate regions around a toy robot and a red bottle" loading="lazy">
+						<figcaption>Color segmentation proposes red candidates, which the Haar cascade then classifies</figcaption>
+					</figure>
+					<p>Detects a toy robot by pairing color-based segmentation with custom-trained Haar cascades (head and body) that classify each candidate and draw a box around the robot (OpenCV). <a href="https://github.com/nikunjparmar828/Haar-Cascade-Custom-Object-Detection" target="_blank" rel="noopener">Code</a></p>
+				</div>
+			</details>
+			<details class="proj">
 				<summary><span class="proj-name">Implementation of Path Planning Algorithms for Autonomous Vehicles</span><span class="date">Aug&ndash;Dec 2021</span></summary>
 				<p>Implemented A* and B-spline path smoothing in a 2D dynamic parking lot environment, with a PID controller for angular and linear velocities and Ackermann steering kinematics. <a href="https://drive.google.com/file/d/1URy0h385pkklGBjLWcIMKMvOOINluf_u/view?usp=sharing" target="_blank" rel="noopener">Report</a></p>
 			</details>
@@ -255,7 +313,7 @@
 
 <script>
 	(function () {
-		var vids = document.querySelectorAll('.media-tile video');
+		var vids = document.querySelectorAll('.media-tile video, .proj-media video');
 		if (!('IntersectionObserver' in window)) { vids.forEach(function (v) { v.play(); }); return; }
 		var io = new IntersectionObserver(function (entries) {
 			entries.forEach(function (e) { e.isIntersecting ? e.target.play().catch(function () {}) : e.target.pause(); });
