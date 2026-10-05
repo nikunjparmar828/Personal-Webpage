@@ -177,73 +177,89 @@
 
 	<section id="projects" class="section">
 		<h2>Projects</h2>
-		<div class="proj-list">
-			<details class="proj">
-				<summary><span class="proj-name">Segway RMP ROS2 Driver</span><span class="date">Oct 2024&ndash;Feb 2026</span></summary>
-				<p>Open-sourced C++ ROS2 drivers for Segway RMP 200/400 mobile robot platforms used across the Texas Robotics fleet. <a href="https://github.com/utexas-bwi/segway_rmp_ros2" target="_blank" rel="noopener">Code</a></p>
-			</details>
-			<details class="proj">
-				<summary><span class="proj-name">ROS2-WebComms</span><span class="date">Mar&ndash;Apr 2025</span></summary>
-				<p>Designed a lightweight, WebSocket-based pub-sub framework for real-time, fault-tolerant ROS2 topic sharing across multi-robot systems. <a href="https://github.com/Living-With-Robots-Lab/ROS2-Webcomms" target="_blank" rel="noopener">Code</a></p>
-			</details>
-			<details class="proj">
-				<summary><span class="proj-name">Multi-Target Tracking with a GNN-Based Tracker</span><span class="date">Sep 2022&ndash;Jun 2023</span></summary>
-				<p>Built a Global Nearest Neighbor tracker to track constant-velocity obstacles for autonomous vehicles. <a href="https://github.com/nikunjparmar828/MTT-System-GNN-Tracker" target="_blank" rel="noopener">Code</a></p>
-			</details>
-			<details class="proj">
-				<summary><span class="proj-name">Hybrid Spatial-Temporal Deep Network for Lane Detection</span><span class="date">2022</span></summary>
-				<div class="proj-body">
-					<figure class="proj-media">
-						<video src="media/lane-detection.mp4" poster="media/lane-detection.jpg" muted loop playsinline preload="none"></video>
-						<figcaption>Camera input (left) and predicted lanes (right), recorded on the WPI campus</figcaption>
-					</figure>
-					<p>Lane detection on continuous driving video, framed as segmentation: an SCNN extracts per-frame features, an ST-RNN fuses them over time, and an encoder&ndash;decoder makes it end-to-end. Compared ST-RNN and encoder&ndash;decoder variants on accuracy, precision, recall, and F1 (PyTorch). <a href="https://github.com/nikunjparmar828/Lane-Detection-for-Autonomous-Cars" target="_blank" rel="noopener">Code</a></p>
+		<div class="card-grid">
+			<article class="card">
+				<a class="card-media" href="https://github.com/utexas-bwi/segway_rmp_ros2" target="_blank" rel="noopener" aria-label="Segway RMP ROS2 Driver">
+					<video src="media/segway-robot.mp4" poster="media/segway-robot.jpg" muted loop playsinline preload="none"></video>
+				</a>
+				<div class="card-body">
+					<h3>Segway RMP ROS2 Driver<span class="date">2024&ndash;26</span></h3>
+					<p>Open-source C++ ROS2 driver for Segway RMP 200/400 robots, used across the Texas Robotics fleet. <a href="https://github.com/utexas-bwi/segway_rmp_ros2" target="_blank" rel="noopener">Code</a></p>
 				</div>
-			</details>
-			<details class="proj">
-				<summary><span class="proj-name">Seq2Seq English-to-French Translation with Attention</span><span class="date">2022</span></summary>
-				<div class="proj-body">
-					<figure class="proj-media proj-media-diagram">
-					<svg class="proj-diagram" viewBox="0 0 690 140" role="img" aria-label="Encoder-decoder with attention: English tokens embedded with GloVe, encoded by a GRU, attention over encoder states, decoded by a GRU into French tokens">
-						<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="dg-arrow"/></marker></defs>
-						<text x="85" y="20" class="dg-label">English sentence</text>
-						<rect x="10" y="40" width="150" height="40" rx="8" class="dg-box"/><text x="85" y="65" class="dg-text">GloVe 6B embeddings</text>
-						<rect x="195" y="40" width="110" height="40" rx="8" class="dg-box dg-accent"/><text x="250" y="65" class="dg-text">GRU encoder</text>
-						<rect x="340" y="40" width="100" height="40" rx="8" class="dg-box"/><text x="390" y="65" class="dg-text">Attention</text>
-						<rect x="475" y="40" width="110" height="40" rx="8" class="dg-box dg-accent"/><text x="530" y="65" class="dg-text">GRU decoder</text>
-						<text x="530" y="128" class="dg-label">French sentence</text>
-						<line x1="85" y1="26" x2="85" y2="38" class="dg-line" marker-end="url(#arr)"/>
-						<line x1="160" y1="60" x2="193" y2="60" class="dg-line" marker-end="url(#arr)"/>
-						<line x1="305" y1="60" x2="338" y2="60" class="dg-line" marker-end="url(#arr)"/>
-						<line x1="440" y1="60" x2="473" y2="60" class="dg-line" marker-end="url(#arr)"/>
-						<line x1="530" y1="80" x2="530" y2="112" class="dg-line" marker-end="url(#arr)"/>
-						<path d="M585,60 C622,60 622,24 530,24 L530,38" class="dg-line dg-dash" marker-end="url(#arr)"/>
-						<text x="628" y="40" class="dg-small" style="text-anchor:start">previous</text>
-						<text x="628" y="53" class="dg-small" style="text-anchor:start">word</text>
-					</svg>
-					</figure>
-					<p>Neural machine translation with a GRU encoder on pretrained GloVe embeddings and an attention-based GRU decoder, trained with teacher forcing (PyTorch). <a href="https://github.com/nikunjparmar828/Deep-Learning-based-Seq2Seq-English-to-French" target="_blank" rel="noopener">Code</a></p>
+			</article>
+			<article class="card">
+				<a class="card-media card-media-diagram" href="https://github.com/Living-With-Robots-Lab/ROS2-Webcomms" target="_blank" rel="noopener" aria-label="ROS2-WebComms">
+					<svg class="card-diagram" viewBox="0 0 320 200" role="img" aria-label="Robot A and Robot B share ROS2 topics through a WebSocket server">
+							<defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-arrow"/></marker></defs>
+							<rect x="10" y="72" width="90" height="56" rx="8" class="dg-box dg-accent"/><text x="55" y="97" class="dg-text">Robot A</text><text x="55" y="114" class="dg-label">ROS2 topics</text>
+							<rect x="120" y="72" width="80" height="56" rx="8" class="dg-box"/><text x="160" y="97" class="dg-text">WebSocket</text><text x="160" y="114" class="dg-label">server</text>
+							<rect x="220" y="72" width="90" height="56" rx="8" class="dg-box dg-accent"/><text x="265" y="97" class="dg-text">Robot B</text><text x="265" y="114" class="dg-label">ROS2 topics</text>
+							<line x1="102" y1="100" x2="118" y2="100" class="dg-line" marker-start="url(#a2)" marker-end="url(#a2)"/>
+							<line x1="202" y1="100" x2="218" y2="100" class="dg-line" marker-start="url(#a2)" marker-end="url(#a2)"/>
+							<text x="160" y="50" class="dg-label">async pub/sub</text>
+							<text x="160" y="158" class="dg-label">auto-reconnect</text>
+						</svg>
+				</a>
+				<div class="card-body">
+					<h3>ROS2-WebComms<span class="date">2025</span></h3>
+					<p>WebSocket client&ndash;server framework for real-time ROS2 topic sharing between robots. <a href="https://github.com/Living-With-Robots-Lab/ROS2-Webcomms" target="_blank" rel="noopener">Code</a></p>
 				</div>
-			</details>
-			<details class="proj">
-				<summary><span class="proj-name">Custom Object Detection with Haar Cascades</span><span class="date">2022</span></summary>
-				<div class="proj-body">
-					<figure class="proj-media">
-						<img src="media/haar-detection.jpg" alt="Color-segmented candidate regions around a toy robot and a red bottle" loading="lazy">
-						<figcaption>Color segmentation proposes red candidates, which the Haar cascade then classifies</figcaption>
-					</figure>
-					<p>Detects a toy robot by pairing color-based segmentation with custom-trained Haar cascades (head and body) that classify each candidate and draw a box around the robot (OpenCV). <a href="https://github.com/nikunjparmar828/Haar-Cascade-Custom-Object-Detection" target="_blank" rel="noopener">Code</a></p>
+			</article>
+			<article class="card">
+				<a class="card-media" href="https://github.com/nikunjparmar828/MTT-System-GNN-Tracker" target="_blank" rel="noopener" aria-label="Multi-Target Tracking">
+					<video src="media/mtt-tracker.mp4" poster="media/mtt-tracker.jpg" muted loop playsinline preload="none"></video>
+				</a>
+				<div class="card-body">
+					<h3>Multi-Target Tracking<span class="date">2022&ndash;23</span></h3>
+					<p>Global Nearest Neighbor tracker with an EKF and k-best assignment, tracking vehicles from radar and vision detections (MATLAB). <a href="https://github.com/nikunjparmar828/MTT-System-GNN-Tracker" target="_blank" rel="noopener">Code</a></p>
 				</div>
-			</details>
-			<details class="proj">
-				<summary><span class="proj-name">Implementation of Path Planning Algorithms for Autonomous Vehicles</span><span class="date">Aug&ndash;Dec 2021</span></summary>
-				<p>Implemented A* and B-spline path smoothing in a 2D dynamic parking lot environment, with a PID controller for angular and linear velocities and Ackermann steering kinematics. <a href="https://drive.google.com/file/d/1URy0h385pkklGBjLWcIMKMvOOINluf_u/view?usp=sharing" target="_blank" rel="noopener">Report</a></p>
-			</details>
-			<details class="proj">
-				<summary><span class="proj-name">Quadruped Robot</span><span class="date">Jul&ndash;Dec 2018</span></summary>
-				<p>Designed a 12-DOF quadruped (3 DOF per limb) in SolidWorks and visualized it in RViz (ROS). Simulated Trot, Gallop, and Bound gaits in MATLAB and PyBullet, completing the design and simulation stage with a top score on the project.</p>
-			</details>
+			</article>
+			<article class="card">
+				<a class="card-media" href="https://github.com/nikunjparmar828/Lane-Detection-for-Autonomous-Cars" target="_blank" rel="noopener" aria-label="Spatial-Temporal Lane Detection">
+					<video src="media/lane-detection.mp4" poster="media/lane-detection.jpg" muted loop playsinline preload="none"></video>
+				</a>
+				<div class="card-body">
+					<h3>Spatial-Temporal Lane Detection<span class="date">2022</span></h3>
+					<p>SCNN + ST-RNN encoder&ndash;decoder that segments lanes in driving video, tested on the WPI campus (PyTorch). <a href="https://github.com/nikunjparmar828/Lane-Detection-for-Autonomous-Cars" target="_blank" rel="noopener">Code</a></p>
+				</div>
+			</article>
+			<article class="card">
+				<a class="card-media card-media-diagram" href="https://github.com/nikunjparmar828/Deep-Learning-based-Seq2Seq-English-to-French" target="_blank" rel="noopener" aria-label="Seq2Seq Translation with Attention">
+					<svg class="card-diagram" viewBox="0 0 320 200" role="img" aria-label="English sentence, GloVe embeddings, GRU encoder, attention, GRU decoder, French sentence">
+							<defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-arrow"/></marker></defs>
+							<text x="20" y="64" class="dg-label" style="text-anchor:start">English</text>
+							<rect x="78" y="42" width="100" height="36" rx="8" class="dg-box"/><text x="128" y="65" class="dg-text">GloVe</text>
+							<rect x="200" y="42" width="110" height="36" rx="8" class="dg-box dg-accent"/><text x="255" y="65" class="dg-text">GRU encoder</text>
+							<rect x="200" y="122" width="110" height="36" rx="8" class="dg-box"/><text x="255" y="145" class="dg-text">Attention</text>
+							<rect x="68" y="122" width="110" height="36" rx="8" class="dg-box dg-accent"/><text x="123" y="145" class="dg-text">GRU decoder</text>
+							<text x="20" y="145" class="dg-label" style="text-anchor:start">French</text>
+							<line x1="64" y1="60" x2="76" y2="60" class="dg-line" marker-end="url(#a1)"/>
+							<line x1="178" y1="60" x2="198" y2="60" class="dg-line" marker-end="url(#a1)"/>
+							<line x1="255" y1="78" x2="255" y2="120" class="dg-line" marker-end="url(#a1)"/>
+							<line x1="200" y1="140" x2="180" y2="140" class="dg-line" marker-end="url(#a1)"/>
+							<line x1="68" y1="140" x2="62" y2="140" class="dg-line"/>
+						</svg>
+				</a>
+				<div class="card-body">
+					<h3>Seq2Seq Translation with Attention<span class="date">2022</span></h3>
+					<p>English-to-French translation with a GRU encoder on GloVe embeddings and an attention GRU decoder (PyTorch). <a href="https://github.com/nikunjparmar828/Deep-Learning-based-Seq2Seq-English-to-French" target="_blank" rel="noopener">Code</a></p>
+				</div>
+			</article>
+			<article class="card">
+				<a class="card-media" href="https://github.com/nikunjparmar828/Haar-Cascade-Custom-Object-Detection" target="_blank" rel="noopener" aria-label="Haar Cascade Object Detection">
+					<img src="media/haar-detection.jpg" alt="Detected toy robot with bounding boxes" loading="lazy">
+				</a>
+				<div class="card-body">
+					<h3>Haar Cascade Object Detection<span class="date">2022</span></h3>
+					<p>Color segmentation plus custom-trained Haar cascades to find and box a toy robot (OpenCV). <a href="https://github.com/nikunjparmar828/Haar-Cascade-Custom-Object-Detection" target="_blank" rel="noopener">Code</a></p>
+				</div>
+			</article>
 		</div>
+
+		<ul class="more-projects">
+			<li><strong>Path Planning for Autonomous Vehicles</strong><span class="date">2021</span> &mdash; Implemented A* and B-spline path smoothing in a 2D dynamic parking lot environment, with a PID controller for angular and linear velocities and Ackermann steering kinematics. <a href="https://drive.google.com/file/d/1URy0h385pkklGBjLWcIMKMvOOINluf_u/view?usp=sharing" target="_blank" rel="noopener">Report</a></li>
+			<li><strong>Quadruped Robot</strong><span class="date">2018</span> &mdash; Designed a 12-DOF quadruped (3 DOF per limb) in SolidWorks and visualized it in RViz (ROS). Simulated Trot, Gallop, and Bound gaits in MATLAB and PyBullet, completing the design and simulation stage with a top score on the project.</li>
+		</ul>
 	</section>
 
 	<section id="education" class="section">
@@ -313,7 +329,7 @@
 
 <script>
 	(function () {
-		var vids = document.querySelectorAll('.media-tile video, .proj-media video');
+		var vids = document.querySelectorAll('.media-tile video, .card-media video');
 		if (!('IntersectionObserver' in window)) { vids.forEach(function (v) { v.play(); }); return; }
 		var io = new IntersectionObserver(function (entries) {
 			entries.forEach(function (e) { e.isIntersecting ? e.target.play().catch(function () {}) : e.target.pause(); });
