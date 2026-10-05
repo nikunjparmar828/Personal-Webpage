@@ -36,7 +36,7 @@
 
 				<p>I'm most interested in autonomous navigation and motion planning, robot perception, and learning-based autonomy &mdash; especially bringing modern AI, including large language models, into robots that are reliable, scalable, and maintainable in the real world. I enjoy working across the full stack, from simulation to on-robot debugging to long-term deployment.</p>
 
-				<p>I hold an M.S. in Robotics Engineering from Worcester Polytechnic Institute and a B.Tech in Mechanical Engineering from Nirma University.</p>
+				<p>Previously, I interned at MathWorks, Void Robotics, Morphle Labs, and the Institute for Plasma Research, and did research at WPI&rsquo;s HERO Lab, Florida Atlantic University&rsquo;s Sea Tech Lab, and Nirma University&rsquo;s Idea Lab. I hold an M.S. in Robotics Engineering from Worcester Polytechnic Institute and a B.Tech in Mechanical Engineering from Nirma University.</p>
 			</div>
 		</div>
 
@@ -62,14 +62,30 @@
 			<article class="project">
 				<h3>Robotics &amp; Embedded Electronics Engineer, Texas Robotics<span class="date">Jan 2024&ndash;Present</span></h3>
 				<p class="role-meta">Austin, TX</p>
+				<div class="media-strip">
+					<figure class="media-tile">
+						<video src="media/fleet-navigation.mp4" poster="media/fleet-navigation.jpg" muted loop playsinline preload="none"></video>
+						<figcaption>Multi-robot fleet navigation</figcaption>
+					</figure>
+					<figure class="media-tile">
+						<video src="media/mobile-manipulation.mp4" poster="media/mobile-manipulation.jpg" muted loop playsinline preload="none"></video>
+						<figcaption>Mobile manipulation</figcaption>
+					</figure>
+					<figure class="media-tile">
+						<video src="media/segway-robot.mp4" poster="media/segway-robot.jpg" muted loop playsinline preload="none"></video>
+						<figcaption>Segway RMP autonomy</figcaption>
+					</figure>
+					<figure class="media-tile">
+						<img src="media/tour-guide-robot.jpg" alt="Tour guide robot" loading="lazy">
+						<figcaption>LLM tour guide robot</figcaption>
+					</figure>
+				</div>
 				<ul class="exp-list">
-					<li>Designed and deployed the navigation and perception pipeline for a fleet of four Segway robots, enabling 24/7 autonomous operation in dynamic environments.</li>
-					<li>Developed a learning-based ROS2 Nav2 perceptual hallucination system for high-speed multi-agent collision avoidance, reducing navigation delays by 60% while maintaining safety.</li>
-					<li>Built the complete ROS2/Gazebo simulation pipeline for the fleet, enabling rapid development, training, and testing of collision avoidance algorithms.</li>
-					<li>Integrated LiDAR, depth cameras, and a UR5 arm with a mobile base for autonomous table-to-table pick-and-place using MoveIt and ROS2.</li>
-					<li>Open-sourced C++ ROS2 drivers for Segway RMP 200/400 robots and ROS2-WebComms, a lightweight WebSocket pub-sub framework for fault-tolerant ROS2 topic sharing across multi-robot systems.</li>
-					<li>Leading development of an LLM-powered autonomous tour guide robot that combines natural-language interaction with real-time navigation, perception, and task planning.</li>
-					<li>Featured on KXAN, KVUE, and other local news outlets.</li>
+					<li>Built the navigation and perception stack for a fleet of four Segway robots running 24/7 in dynamic environments.</li>
+					<li>Developed learning-based multi-agent collision avoidance in ROS2 Nav2, cutting navigation delays by 60%.</li>
+					<li>Integrated a UR5 arm, LiDAR, and depth cameras on a mobile base for autonomous pick-and-place (MoveIt, ROS2).</li>
+					<li>Open-sourced ROS2 drivers for Segway RMP 200/400 and ROS2-WebComms for multi-robot communication.</li>
+					<li>Leading an LLM-powered autonomous tour guide robot.</li>
 				</ul>
 			</article>
 
@@ -215,5 +231,15 @@
 
 </div>
 
+<script>
+	(function () {
+		var vids = document.querySelectorAll('.media-tile video');
+		if (!('IntersectionObserver' in window)) { vids.forEach(function (v) { v.play(); }); return; }
+		var io = new IntersectionObserver(function (entries) {
+			entries.forEach(function (e) { e.isIntersecting ? e.target.play().catch(function () {}) : e.target.pause(); });
+		}, { threshold: 0.25 });
+		vids.forEach(function (v) { io.observe(v); });
+	})();
+</script>
 </body>
 </html>
