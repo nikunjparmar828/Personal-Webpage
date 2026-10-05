@@ -277,3 +277,12 @@ footer {
 		flex-wrap: wrap;
 	}
 }
+
+.exp-list {
+	margin: 6px 0 0;
+	padding-left: 18px;
+}
+
+.exp-list li {
+	margin-bottom: 4px;
+}
