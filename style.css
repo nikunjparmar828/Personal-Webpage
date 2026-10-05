@@ -410,12 +410,129 @@ footer {
 	color: var(--muted);
 }
 
+.exp-feature {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	gap: 18px;
+	align-items: start;
+	margin-top: 10px;
+}
+
+.feature-media {
+	display: block;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #000;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.feature-media:hover {
+	text-decoration: none;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.feature-media img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.feature-caption {
+	display: block;
+	padding: 8px 12px 10px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #f2f2f2;
+}
+
+.feature-caption small {
+	display: block;
+	font-size: 11px;
+	font-weight: 400;
+	color: #9a9a9a;
+}
+
+.feature-text p {
+	margin-top: 0;
+}
+
+.proj-list {
+	border-top: 1px solid var(--border);
+}
+
+.proj-list details.proj {
+	margin: 0;
+	padding: 0;
+	border-top: 0;
+	border-bottom: 1px solid var(--border);
+}
+
+.proj summary {
+	display: flex;
+	align-items: baseline;
+	gap: 12px;
+	padding: 12px 0;
+	list-style: none;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.proj summary::-webkit-details-marker {
+	display: none;
+}
+
+.proj summary::before {
+	content: "";
+	flex-shrink: 0;
+	width: 6px;
+	height: 6px;
+	border-right: 1.5px solid var(--muted);
+	border-bottom: 1.5px solid var(--muted);
+	transform: translateY(-2px) rotate(-45deg);
+	transition: transform 0.2s ease;
+}
+
+.proj[open] summary::before {
+	transform: translateY(-4px) rotate(45deg);
+}
+
+.proj-name {
+	flex: 1;
+}
+
+.proj .date {
+	color: var(--muted);
+	font-weight: 400;
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+.proj p {
+	margin: 0 0 14px 18px;
+	font-size: 15px;
+}
+
 @media (max-width: 600px) {
 	.media-strip {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.oss-grid {
+	.oss-grid,
+	.exp-feature {
 		grid-template-columns: 1fr;
+	}
+
+	.proj summary {
+		flex-wrap: wrap;
+		row-gap: 0;
+	}
+
+	.proj .date {
+		width: 100%;
+		padding-left: 18px;
 	}
 }

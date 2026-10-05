@@ -39,20 +39,6 @@
 				<p>Previously, I interned at MathWorks, Void Robotics, Morphle Labs, and the Institute for Plasma Research, and did research at WPI&rsquo;s HERO Lab, Florida Atlantic University&rsquo;s Sea Tech Lab, and Nirma University&rsquo;s Idea Lab. I hold an M.S. in Robotics Engineering from Worcester Polytechnic Institute and a B.Tech in Mechanical Engineering from Nirma University.</p>
 			</div>
 		</div>
-
-		<details>
-			<summary>Books I've enjoyed</summary>
-			<ul class="book-list">
-				<li>Where Good Ideas Come From &mdash; Steven Johnson</li>
-				<li>Moonwalking with Einstein &mdash; Joshua Foer</li>
-				<li>Betting It All</li>
-				<li>Surely You're Joking, Mr. Feynman!</li>
-				<li>Leonardo da Vinci &mdash; Walter Isaacson</li>
-				<li>The Man Who Knew Infinity: A Life of the Genius Ramanujan</li>
-				<li>Superintelligence &mdash; Nick Bostrom</li>
-				<li>...and many more</li>
-			</ul>
-		</details>
 	</section>
 
 	<section id="experience" class="section">
@@ -113,7 +99,19 @@
 			<article class="project">
 				<h3>Robotics Software Intern, Morphle Labs<span class="date">Mar&ndash;May 2021</span></h3>
 				<p class="role-meta">Bengaluru, India</p>
-				<p>Built motion control for a multi-axis digital microscope scanner, integrating actuators and sensors on GRBL firmware.</p>
+				<div class="exp-feature">
+					<a class="feature-media" href="https://www.morphlelabs.com/products/morpholens-6-scanner" target="_blank" rel="noopener">
+						<img src="media/morpholens-6.jpg" alt="MorphoLens 6 whole-slide scanner" loading="lazy">
+						<span class="feature-caption">MorphoLens 6 &middot; digital pathology scanner<small>Image &copy; Morphle Labs</small></span>
+					</a>
+					<div class="feature-text">
+						<p>Worked on the R&amp;D-phase motion control system for the multi-axis stage of what became the <strong>MorphoLens 6</strong> whole-slide scanner.</p>
+						<ul class="exp-list">
+							<li>Integrated actuators and sensors with GRBL motion control boards, reaching 200-micron positional accuracy.</li>
+							<li>Benchmarked ROS (C++) and Marlin implementations against the GRBL setup.</li>
+						</ul>
+					</div>
+				</div>
 			</article>
 
 			<article class="project">
@@ -166,33 +164,27 @@
 
 	<section id="projects" class="section">
 		<h2>Projects</h2>
-		<div class="project-list">
-
-			<article class="project">
-				<h3>Segway RMP ROS2 Driver<span class="date">Oct 2024&ndash;Feb 2026</span></h3>
+		<div class="proj-list">
+			<details class="proj">
+				<summary><span class="proj-name">Segway RMP ROS2 Driver</span><span class="date">Oct 2024&ndash;Feb 2026</span></summary>
 				<p>Open-sourced C++ ROS2 drivers for Segway RMP 200/400 mobile robot platforms used across the Texas Robotics fleet. <a href="https://github.com/utexas-bwi/segway_rmp_ros2" target="_blank" rel="noopener">Code</a></p>
-			</article>
-
-			<article class="project">
-				<h3>ROS2-WebComms<span class="date">Mar&ndash;Apr 2025</span></h3>
+			</details>
+			<details class="proj">
+				<summary><span class="proj-name">ROS2-WebComms</span><span class="date">Mar&ndash;Apr 2025</span></summary>
 				<p>Designed a lightweight, WebSocket-based pub-sub framework for real-time, fault-tolerant ROS2 topic sharing across multi-robot systems. <a href="https://github.com/Living-With-Robots-Lab/ROS2-Webcomms" target="_blank" rel="noopener">Code</a></p>
-			</article>
-
-			<article class="project">
-				<h3>Multi-Target Tracking with a GNN-Based Tracker<span class="date">Sep 2022&ndash;Jun 2023</span></h3>
+			</details>
+			<details class="proj">
+				<summary><span class="proj-name">Multi-Target Tracking with a GNN-Based Tracker</span><span class="date">Sep 2022&ndash;Jun 2023</span></summary>
 				<p>Built a Global Nearest Neighbor tracker to track constant-velocity obstacles for autonomous vehicles. <a href="https://github.com/nikunjparmar828/MTT-System-GNN-Tracker" target="_blank" rel="noopener">Code</a></p>
-			</article>
-
-			<article class="project">
-				<h3>Implementation of Path Planning Algorithms for Autonomous Vehicles<span class="date">Aug&ndash;Dec 2021</span></h3>
+			</details>
+			<details class="proj">
+				<summary><span class="proj-name">Implementation of Path Planning Algorithms for Autonomous Vehicles</span><span class="date">Aug&ndash;Dec 2021</span></summary>
 				<p>Implemented A* and B-spline path smoothing in a 2D dynamic parking lot environment, with a PID controller for angular and linear velocities and Ackermann steering kinematics. <a href="https://drive.google.com/file/d/1URy0h385pkklGBjLWcIMKMvOOINluf_u/view?usp=sharing" target="_blank" rel="noopener">Report</a></p>
-			</article>
-
-			<article class="project">
-				<h3>Quadruped Robot<span class="date">Jul&ndash;Dec 2018</span></h3>
+			</details>
+			<details class="proj">
+				<summary><span class="proj-name">Quadruped Robot</span><span class="date">Jul&ndash;Dec 2018</span></summary>
 				<p>Designed a 12-DOF quadruped (3 DOF per limb) in SolidWorks and visualized it in RViz (ROS). Simulated Trot, Gallop, and Bound gaits in MATLAB and PyBullet, completing the design and simulation stage with a top score on the project.</p>
-			</article>
-
+			</details>
 		</div>
 	</section>
 
@@ -224,6 +216,22 @@
 
 		</div>
 		<p class="muted" style="margin-top: 16px;">More posts coming soon.</p>
+	</section>
+
+	<section id="books" class="section">
+		<details>
+			<summary>Books I've enjoyed</summary>
+			<ul class="book-list">
+				<li>Where Good Ideas Come From &mdash; Steven Johnson</li>
+				<li>Moonwalking with Einstein &mdash; Joshua Foer</li>
+				<li>Betting It All</li>
+				<li>Surely You're Joking, Mr. Feynman!</li>
+				<li>Leonardo da Vinci &mdash; Walter Isaacson</li>
+				<li>The Man Who Knew Infinity: A Life of the Genius Ramanujan</li>
+				<li>Superintelligence &mdash; Nick Bostrom</li>
+				<li>...and many more</li>
+			</ul>
+		</details>
 	</section>
 
 	<section id="contact" class="section">
