@@ -328,6 +328,19 @@ footer {
 	background: #fff;
 }
 
+.media-strip-hero {
+	grid-template-columns: 2fr 1fr;
+	margin-bottom: 0;
+}
+
+.media-strip-hero .media-tile {
+	aspect-ratio: auto;
+}
+
+.media-strip-hero .media-tile:first-child {
+	aspect-ratio: 4 / 3;
+}
+
 .media-tile img.fit-contain {
 	object-fit: contain;
 	padding: 6px 6px 30px;
@@ -636,6 +649,14 @@ footer {
 @media (max-width: 600px) {
 	.media-strip {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.media-strip-hero {
+		grid-template-columns: 1fr;
+	}
+
+	.media-strip-hero .media-tile:last-child {
+		aspect-ratio: 16 / 9;
 	}
 
 	.media-strip-trio .media-tile:first-child {
