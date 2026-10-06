@@ -460,6 +460,51 @@ footer {
 	margin-top: 0;
 }
 
+.poster-feature {
+	display: block;
+	margin-top: 14px;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #1a1a1a;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.poster-feature:hover {
+	text-decoration: none;
+	transform: translateY(-2px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.poster-feature img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.poster-caption {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 4px 12px;
+	padding: 10px 14px 12px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #f2f2f2;
+}
+
+.poster-cta {
+	flex-shrink: 0;
+	color: #c9c9c9;
+	font-weight: 400;
+}
+
+.poster-feature:hover .poster-cta {
+	color: #ffffff;
+}
+
 
 .card-grid {
 	display: grid;
